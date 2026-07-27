@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.container{
+    width:750px;
+    margin:20px auto;
+    background:white;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+h1{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin:0;
+}
+
+table{
+    width:100%;
+    padding:20px;
+}
+
+td{
+    padding:12px;
+    vertical-align:top;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select{
+    width:100%;
+    padding:10px;
+}
+
+.buttons{
+    text-align:center;
+    padding-bottom:30px;
+}
+
+button{
+    padding:12px 30px;
+    font-size:18px;
+    margin:10px;
+}
+
+.register{
+    background:green;
+    color:white;
+}
+
+.reset{
+    background:gray;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<form>
+
+<table>
+
+<tr>
+<td><b>1. Full Name:</b></td>
+<td><input type="text" placeholder="Enter full name"></td>
+</tr>
+
+<tr>
+<td><b>2. Gender:</b></td>
+<td>
+
+<input type="radio" name="gender" checked> Male
+
+<input type="radio" name="gender"> Female
+
+<input type="radio" name="gender"> Other
+
+</td>
+</tr>
+
+<tr>
+<td><b>3. Department:</b></td>
+<td>
+
+<select>
+
+<option>Select Department</option>
+
+<option>Computer Science</option>
+
+<option>Business</option>
+
+<option>Education</option>
+
+<option>ICT</option>
+
+</select>
+
+</td>
+</tr>
+
+<tr>
+<td><b>4. Courses (Select all that apply):</b></td>
+
+<td>
+
+<input type="checkbox" checked> Web Development<br><br>
+
+<input type="checkbox" checked> Database Systems<br><br>
+
+<input type="checkbox"> Computer Networks<br><br>
+
+<input type="checkbox"> Software Engineering<br><br>
+
+<input type="checkbox"> Information Security
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><b>5. Email:</b></td>
+
+<td><input type="email" placeholder="Enter email address"></td>
+
+</tr>
+
+<tr>
+
+<td><b>6. Phone Number:</b></td>
+
+<td><input type="tel" placeholder="Enter phone number"></td>
+
+</tr>
+
+</table>
+
+<div class="buttons">
+
+<button class="register">Register</button>
+
+<button type="reset" class="reset">Reset</button>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
